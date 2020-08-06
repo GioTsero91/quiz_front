@@ -1,0 +1,15 @@
+#settingsContainer {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100px;
+}
+#settingsContainer button {
+    margin:10px;
+}
+button.active {
+    background-color:green;
+    color:#fff;
+}

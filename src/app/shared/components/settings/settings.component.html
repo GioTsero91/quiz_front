@@ -1,0 +1,12 @@
+<div id="settingsContainer">
+    <div class="absolute" *ngIf="dataLoaded">
+        <div [@simpleFadeAnimation]="'in'" class="answer-container">
+            <button [ngClass]="{active: settingData.mode === constants.MODES[0]}" (click)="setMode(constants.MODES[0])" mat-raised-button>binary</button>
+            <button [ngClass]="{active: settingData.mode === constants.MODES[1]}" (click)="setMode(constants.MODES[1])" mat-raised-button>multi</button>
+        </div>
+
+    </div>
+    <mat-spinner class="absolute" diameter="50" [@loaderAnimation]="'in'" *ngIf="!dataLoaded"></mat-spinner>
+</div>
+
+
